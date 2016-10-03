@@ -38,7 +38,7 @@ public class GameBoard {
                 }
                 if (Rules.evalFourty(this.players[i]) && Rules.evalEqual(this.players[i].dicecup)) {
                     System.out.println(players[i].getName() + " vandt");
-                    System.out.println("Vundet ved 40 point og to ens terninger");
+                    System.out.println("Vundet ved " + players[i].getPoints() +" point og to ens terninger");
                     winner = this.players[i];
                     break;
                 }
