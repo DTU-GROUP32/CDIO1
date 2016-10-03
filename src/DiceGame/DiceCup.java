@@ -2,6 +2,9 @@ package DiceGame;
 
 import java.lang.reflect.Array;
 
+/**
+ *
+ */
 public class DiceCup {
     private Dice[] dices = new Dice[5];
     public DiceCup(){
