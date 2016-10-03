@@ -1,7 +1,5 @@
 package DiceGame;
 
-import java.lang.reflect.Array;
-
 /**
  * Dicecup class
  */
@@ -20,12 +18,12 @@ public class DiceCup {
 
     /**
      * Rolls all dices in cup
-     * TODO: Fix for-loop to be indexed instead of foreach.
      */
     public void throwDices(){
         int tempRoundScore = 0;
         for (int i = 0; i < this.dices.length; i++) {
             this.dices[i].Roll();
+            System.out.printf("");
             tempRoundScore += this.dices[i].getFaceValue();
         }
         this.roundScore = tempRoundScore;
@@ -39,6 +37,10 @@ public class DiceCup {
         return this.dices;
     }
 
+    /**
+     * Returns the round score variable
+     * @return int roundScore
+     */
     public int getRoundScore(){
         return this.roundScore;
     }
