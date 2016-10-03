@@ -1,7 +1,7 @@
 package DiceGame;
 
 public class Dice {
-    private int sides, faceValue;
+    private int sides, faceValue = 0, lastValue;
 
     /**
      * Default constructor creates 6-sided dice
@@ -28,9 +28,25 @@ public class Dice {
     }
 
     /**
+     * Returns the last value from dice
+     * @return int lastValue
+     */
+    public int getLastValue(){
+        return this.lastValue;
+    }
+
+    /**
+     *
+     * @param lastVal
+     */
+    public void setLastValue(int lastVal){
+        this.lastValue = lastVal;
+    }
+    /**
      * Rolls the dice and sets value to faceValue variable
      */
     public void Roll(){
-        this.faceValue = (int)Math.random()*6+1;
+        this.setLastValue(this.getFaceValue());
+        this.faceValue = (int)(Math.random()*6)+1;
     }
 }
