@@ -17,7 +17,7 @@ public class DiceCup {
 		getD1().roll();
 		getD2().roll();
 		roundScore = getD1().getFaceValue() + getD2().getFaceValue();		
-		System.out.println("Du slog en " + getD1().getFaceValue() + "'er og en " + getD2().getFaceValue() + "'er");
+		//System.out.println("Du slog en " + getD1().getFaceValue() + "'er og en " + getD2().getFaceValue() + "'er");
 		return roundScore;
 	}
 
