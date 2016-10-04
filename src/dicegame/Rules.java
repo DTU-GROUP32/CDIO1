@@ -1,7 +1,4 @@
-package rules;
-
-import diceCup.DiceCup;
-import player.Player;
+package dicegame;
 
 public class Rules {
 

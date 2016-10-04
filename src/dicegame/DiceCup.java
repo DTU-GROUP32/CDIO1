@@ -1,6 +1,4 @@
-package diceCup;
-
-import dice.Dice;
+package dicegame;
 
 public class DiceCup {
 

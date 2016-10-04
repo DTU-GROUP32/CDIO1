@@ -1,4 +1,4 @@
-package player;
+package dicegame;
 
 public class Player {
 

@@ -1,10 +1,6 @@
-package gameBoard;
+package dicegame;
 
 import java.util.Scanner;
-
-import diceCup.DiceCup;
-import rules.Rules;
-import player.Player;
 
 public class GameBoard {
 
@@ -60,7 +56,7 @@ public class GameBoard {
 	// Tells who's turn it is, waits for someone to press 'Enter' and then throws dice.
 	public static void turn(Player p, DiceCup c) {		
 		System.out.println("Det er din tur " + p);
-		GameBoard.pause();
+		//GameBoard.pause();
 		c.throwDice();
 		System.out.println("Du slog en " + c.getD1().getFaceValue() + "'er og en " + c.getD2().getFaceValue() + "'er");
 	}
